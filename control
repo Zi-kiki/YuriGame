@@ -1,8 +1,8 @@
-Package: com.lotus.yurigame
-Name: yurigame
-Version: 1.0
+Package: com.yourcompany.tweak
+Name: YuriGame
+Version: 0.0.1
 Architecture: iphoneos-arm
-Description: 多功能模拟器
-Maintainer: lotus
-Author: lotus
+Description: An awesome application!
+Maintainer: IosBX
+Author: IosBX
 Section: Utilities

@@ -1,4 +1,3 @@
-THEOS = /var/theos
 ARCHS = arm64
 TARGET = iphone:15.6:14.0
 
@@ -6,13 +5,12 @@ include $(THEOS)/makefiles/common.mk
 
 APPLICATION_NAME = YuriGame
 
-$(APPLICATION_NAME)_FILES = main.m
+YuriGame_FILES = main.m MainUI.m YiAppDelegate.m litehook/litehook.c litehook/Dyld.m litehook/utils.m litehook/LCMachOUtils.m
 
-$(APPLICATION_NAME)_LDFLAGS = -e _YuriGameMain
-$(APPLICATION_NAME)_CFLAGS = -fobjc-arc
-$(APPLICATION_NAME)_FRAMEWORKS = UIKit
-
-$(APPLICATION_NAME)_CODESIGN_FLAGS = -Sentitlements.xml
+YuriGame_LDFLAGS = -e _YuriGameMain
+YuriGame_CFLAGS = -fobjc-arc
+YuriGame_FRAMEWORKS = UIKit CoreGraphics
+YuriGame_CODESIGN_FLAGS = -Sentitlements.xml
 
 include $(THEOS_MAKE_PATH)/application.mk
 
