@@ -22,7 +22,6 @@ const char *litehook_locate_dsc(void);
 void *litehook_find_symbol(const mach_header_u *header, const char *symbolName);
 void *litehook_find_symbol_file(const mach_header_u *header, const char *symbolName);
 void *litehook_find_dsc_symbol(const char *imagePath, const char *symbolName);
-kern_return_t litehook_hook_function(void *source, void *target);
 
 #define LITEHOOK_REBIND_GLOBAL NULL
 void litehook_rebind_symbol(const mach_header_u *targetHeader, void *replacee, void *replacement, bool (*exceptionFilter)(const mach_header_u *header));
@@ -40,3 +39,20 @@ typedef struct {
 
 extern uint32_t gRebindCount;
 extern global_rebind *gRebinds;
+
+#define DEFINE_HOOK(func, return_type, signature) \
+    static return_type (*orig_##func) signature __attribute__((unused)) = \
+        (return_type (*) signature)func; \
+    static return_type hook_##func signature
+
+#define DO_HOOK(func, type) \
+    litehook_rebind_symbol(type, func, hook_##func, NULL)
+
+#define DO_HOOK_GLOBAL(func) \
+    DO_HOOK(func,LITEHOOK_REBIND_GLOBAL)
+
+#define ORIG_FUNC(func) \
+    orig_##func
+
+#define HOOK_FUNC(func) \
+    hook_##func
