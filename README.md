@@ -1,4 +1,4 @@
-# YuriGame
+# YuriGame-iOS视觉小说模拟器
 
 ## 项目介绍
 **YuriGame 模拟器**是一款全面优化的 iOS galgame 模拟器，玩家可以通过模拟器在上面畅玩 galgame。
