@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000010000000000000001 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000001 /* main.m */; };
+		A10000010000000000000002 /* MainUI.m in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000002 /* MainUI.m */; };
+		A10000010000000000000003 /* YiAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000003 /* YiAppDelegate.m */; };
+		A10000010000000000000004 /* litehook/Dyld.m in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000004 /* litehook/Dyld.m */; };
+		A10000010000000000000005 /* litehook/LCMachOUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000005 /* litehook/LCMachOUtils.m */; };
+		A10000010000000000000006 /* litehook/utils.m in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000006 /* litehook/utils.m */; };
+		A10000010000000000000007 /* litehook/litehook.c in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000007 /* litehook/litehook.c */; };
+		A10000010000000000000008 /* Resources/default_bg in Resources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000008 /* Resources/default_bg */; };
+		A10000010000000000000009 /* Resources/Frameworks/ArtemisHook.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A2000001000000000000000C /* Resources/Frameworks/ArtemisHook.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1000001000000000000000A /* Resources/Frameworks/ONSTouch.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A2000001000000000000000D /* Resources/Frameworks/ONSTouch.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1000001000000000000000B /* Resources/Frameworks/XP3Touch.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A2000001000000000000000E /* Resources/Frameworks/XP3Touch.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1000001000000000000000C /* Resources/Frameworks/YuriGameUI.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A2000001000000000000000F /* Resources/Frameworks/YuriGameUI.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1000001000000000000000D /* Resources/PlugIns/Artemis.appex in Embed Applications */ = {isa = PBXBuildFile; fileRef = A20000010000000000000010 /* Resources/PlugIns/Artemis.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A1000001000000000000000E /* Resources/PlugIns/ONSPlayer.appex in Embed Applications */ = {isa = PBXBuildFile; fileRef = A20000010000000000000011 /* Resources/PlugIns/ONSPlayer.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A1000001000000000000000F /* Resources/PlugIns/XP3Player.appex in Embed Applications */ = {isa = PBXBuildFile; fileRef = A20000010000000000000012 /* Resources/PlugIns/XP3Player.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A30000010000000000000001 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A10000010000000000000009 /* Resources/Frameworks/ArtemisHook.dylib in Embed Frameworks */,
+				A1000001000000000000000A /* Resources/Frameworks/ONSTouch.dylib in Embed Frameworks */,
+				A1000001000000000000000B /* Resources/Frameworks/XP3Touch.dylib in Embed Frameworks */,
+				A1000001000000000000000C /* Resources/Frameworks/YuriGameUI.dylib in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A30000010000000000000002 /* Embed Applications */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Applications;
+			dstSubfolderSpec = 0;
+			files = (
+				A1000001000000000000000D /* Resources/PlugIns/Artemis.appex in Embed Applications */,
+				A1000001000000000000000E /* Resources/PlugIns/ONSPlayer.appex in Embed Applications */,
+				A1000001000000000000000F /* Resources/PlugIns/XP3Player.appex in Embed Applications */,
+			);
+			name = "Embed Applications";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A20000010000000000000001 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A20000010000000000000002 /* MainUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainUI.m; sourceTree = "<group>"; };
+		A20000010000000000000003 /* YiAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YiAppDelegate.m; sourceTree = "<group>"; };
+		A20000010000000000000004 /* litehook/Dyld.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = litehook/Dyld.m; sourceTree = "<group>"; };
+		A20000010000000000000005 /* litehook/LCMachOUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = litehook/LCMachOUtils.m; sourceTree = "<group>"; };
+		A20000010000000000000006 /* litehook/utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = litehook/utils.m; sourceTree = "<group>"; };
+		A20000010000000000000007 /* litehook/litehook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = litehook/litehook.c; sourceTree = "<group>"; };
+		A20000010000000000000008 /* Resources/default_bg */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources/default_bg; sourceTree = "<group>"; };
+		A20000010000000000000009 /* Resources/PlugIns */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources/PlugIns; sourceTree = "<group>"; };
+		A2000001000000000000000A /* Resources/Frameworks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources/Frameworks; sourceTree = "<group>"; };
+		A2000001000000000000000B /* YuriGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YuriGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2000001000000000000000C /* Resources/Frameworks/ArtemisHook.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = Resources/Frameworks/ArtemisHook.dylib; sourceTree = "<group>"; };
+		A2000001000000000000000D /* Resources/Frameworks/ONSTouch.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = Resources/Frameworks/ONSTouch.dylib; sourceTree = "<group>"; };
+		A2000001000000000000000E /* Resources/Frameworks/XP3Touch.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = Resources/Frameworks/XP3Touch.dylib; sourceTree = "<group>"; };
+		A2000001000000000000000F /* Resources/Frameworks/YuriGameUI.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = Resources/Frameworks/YuriGameUI.dylib; sourceTree = "<group>"; };
+		A20000010000000000000010 /* Resources/PlugIns/Artemis.appex */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources/PlugIns/Artemis.appex; sourceTree = "<group>"; };
+		A20000010000000000000011 /* Resources/PlugIns/ONSPlayer.appex */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources/PlugIns/ONSPlayer.appex; sourceTree = "<group>"; };
+		A20000010000000000000012 /* Resources/PlugIns/XP3Player.appex */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources/PlugIns/XP3Player.appex; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A40000010000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A50000010000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A50000010000000000000002 /* Sources */,
+				A50000010000000000000003 /* Resources */,
+				A50000010000000000000004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A50000010000000000000002 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A20000010000000000000001 /* main.m */,
+				A20000010000000000000002 /* MainUI.m */,
+				A20000010000000000000003 /* YiAppDelegate.m */,
+				A20000010000000000000004 /* litehook/Dyld.m */,
+				A20000010000000000000005 /* litehook/LCMachOUtils.m */,
+				A20000010000000000000006 /* litehook/utils.m */,
+				A20000010000000000000007 /* litehook/litehook.c */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		A50000010000000000000003 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A20000010000000000000008 /* Resources/default_bg */,
+				A20000010000000000000009 /* Resources/PlugIns */,
+				A2000001000000000000000A /* Resources/Frameworks */,
+				A2000001000000000000000C /* Resources/Frameworks/ArtemisHook.dylib */,
+				A2000001000000000000000D /* Resources/Frameworks/ONSTouch.dylib */,
+				A2000001000000000000000E /* Resources/Frameworks/XP3Touch.dylib */,
+				A2000001000000000000000F /* Resources/Frameworks/YuriGameUI.dylib */,
+				A20000010000000000000010 /* Resources/PlugIns/Artemis.appex */,
+				A20000010000000000000011 /* Resources/PlugIns/ONSPlayer.appex */,
+				A20000010000000000000012 /* Resources/PlugIns/XP3Player.appex */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A50000010000000000000004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001000000000000000B /* YuriGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A60000010000000000000001 /* YuriGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A70000010000000000000001 /* Build configuration list for PBXNativeTarget "YuriGame" */;
+			buildPhases = (
+				A80000010000000000000001 /* Sources */,
+				A40000010000000000000001 /* Frameworks */,
+				A80000010000000000000002 /* Resources */,
+				A30000010000000000000001 /* Embed Frameworks */,
+				A30000010000000000000002 /* Embed Applications */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YuriGame;
+			productName = YuriGame;
+			productReference = A2000001000000000000000B /* YuriGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A90000010000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					A60000010000000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+						DevelopmentTeam = NP445742X9;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A70000010000000000000002 /* Build configuration list for PBXProject "YuriGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A50000010000000000000001;
+			productRefGroup = A50000010000000000000004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A60000010000000000000001 /* YuriGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A80000010000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000010000000000000008 /* Resources/default_bg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A80000010000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000010000000000000001 /* main.m in Sources */,
+				A10000010000000000000002 /* MainUI.m in Sources */,
+				A10000010000000000000003 /* YiAppDelegate.m in Sources */,
+				A10000010000000000000004 /* litehook/Dyld.m in Sources */,
+				A10000010000000000000005 /* litehook/LCMachOUtils.m in Sources */,
+				A10000010000000000000006 /* litehook/utils.m in Sources */,
+				A10000010000000000000007 /* litehook/litehook.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA0000010000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NP445742X9;
+				INFOPLIST_FILE = Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				OTHER_LDFLAGS = (
+					"-e",
+					_YuriGameMain,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lotus.yurigame;
+				PRODUCT_NAME = YuriGame;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA0000010000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NP445742X9;
+				INFOPLIST_FILE = Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				OTHER_LDFLAGS = (
+					"-e",
+					_YuriGameMain,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lotus.yurigame;
+				PRODUCT_NAME = YuriGame;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AA0000010000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+			};
+			name = Debug;
+		};
+		AA0000010000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A70000010000000000000001 /* Build configuration list for PBXNativeTarget "YuriGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0000010000000000000001 /* Debug */,
+				AA0000010000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A70000010000000000000002 /* Build configuration list for PBXProject "YuriGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0000010000000000000003 /* Debug */,
+				AA0000010000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A90000010000000000000001 /* Project object */;
+}

@@ -1,5 +1,6 @@
 TARGET := iphone:15.6:14.0
 ARCHS := arm64
+THEOS ?= /var/theos
 
 include $(THEOS)/makefiles/common.mk
 

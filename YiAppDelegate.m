@@ -39,7 +39,10 @@ static BOOL linkPluginsFolder(NSString *sourcePath, NSString *destPath) {
 
 static void linkPluginsToDocuments() {
     NSFileManager *fm = [NSFileManager defaultManager];
-    NSString *pluginsPath = [[NSBundle mainBundle].bundlePath stringByAppendingPathComponent:@"PlugIns"];
+    NSString *pluginsPath = [[NSBundle mainBundle].bundlePath stringByAppendingPathComponent:@"Applications"];
+    if (![fm fileExistsAtPath:pluginsPath]) {
+        pluginsPath = [[NSBundle mainBundle].bundlePath stringByAppendingPathComponent:@"PlugIns"];
+    }
     NSString *documentsPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
     NSString *destPath = [documentsPath stringByAppendingPathComponent:@"Applications"];
     

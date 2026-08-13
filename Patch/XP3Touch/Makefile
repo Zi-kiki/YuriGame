@@ -1,4 +1,4 @@
-THEOS = /var/theos
+THEOS ?= /var/theos
 
 ARCHS = arm64
 TARGET = iphone:15.6:14.5
